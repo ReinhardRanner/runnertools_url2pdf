@@ -14,7 +14,7 @@ This Node.js project uses Puppeteer to generate a PDF from a given website URL. 
 1. **Clone the repository:**
 
     ```bash
-    git clone https://github.com/your-username/url2pdf.git
+    git clone https://github.com/ReinhardRanner/url2pdf
     cd url2pdf
     ```
 
