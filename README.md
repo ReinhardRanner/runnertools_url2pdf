@@ -61,5 +61,5 @@ This Node.js project uses Puppeteer to generate a PDF from a given website URL. 
     Open your browser and navigate to:
 
     ```
-    http://www.yourwebsite.com:3000?url=https://www.google.com
+    <<YOUR_SERVER>>:3000?url=https://www.google.com
     ```
