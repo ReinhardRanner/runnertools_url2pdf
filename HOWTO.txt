@@ -1,0 +1,5 @@
+# Build Docker Image
+docker build -t url2pdf .
+
+# Run Image
+docker run -p 3000:3000 url2pdf
