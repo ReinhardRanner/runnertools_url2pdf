@@ -14,6 +14,7 @@ app.get('/', async (req, res) => {
 
     try {
         const browser = await puppeteer.launch({
+	    executablePath: '/usr/bin/google-chrome',
             args: ['--no-sandbox', '--disable-setuid-sandbox']
         });
         const page = await browser.newPage();
@@ -28,7 +29,7 @@ app.get('/', async (req, res) => {
         pdfStream.pipe(res);
     } catch (error) {
         console.error(error);
-        res.status(500).send('An error occurred while generating the PDF');
+        res.status(500).send('An error occurred while generating the PDF: ' + error);
     }
 });
 
